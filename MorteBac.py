@@ -10,7 +10,6 @@ horas = 0
 pop = 500
 
 while (pop > 0):
-    horas +=1
     if(horas <= 15):
         pop = pop
     elif(horas <= 25):
@@ -19,5 +18,7 @@ while (pop > 0):
         pop = pop
     else:
         pop = int(pop*0.5)
+    horas +=1
+    print("Numero de bacterias em", horas,"horas: ", pop)
 
-print(horas)
+print("Total de horas para que toda população bacteriana morra:", horas)
