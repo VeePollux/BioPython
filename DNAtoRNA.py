@@ -3,15 +3,9 @@ retorne uma sequência de RNA transcrita. CGATTCGTGATCGTATGTCGTGCT'''
 
 DNA = (str(input("Sequência de DNA: "))).upper()
 
+trans = {"A": "U", "T":"A", "C": "G", "G":"C"}
 RNA = ""
 
 for nucleotideo in DNA:
-    if nucleotideo == "A":
-        RNA = RNA + "U"
-    elif nucleotideo == "T":
-        RNA = RNA + "A"
-    elif nucleotideo == "C":
-        RNA = RNA + "G"
-    elif nucleotideo == "G":
-        RNA = RNA + "C"
+    RNA = RNA + trans[nucleotideo]
 print("Sequência de RNA:", RNA)
