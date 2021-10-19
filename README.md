@@ -1,3 +1,3 @@
 # BioPython
 
-Estudo de Python na Biologia molecular.
+Estudo de Python na Biologia Molecular.
